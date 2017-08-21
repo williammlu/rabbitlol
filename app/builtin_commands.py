@@ -100,7 +100,7 @@ builtin_command_groups = [
         Command(
             name='yelp',
             description='Yelp search',
-            url_pattern='http://www.yelp.com/search?find_desc={0}&src=opensearch'
+            url_pattern='http://www.yelp.com/search?find_desc={0}&src=opensearch',
             default_url='https://www.yelp.com',
         ),
     ),
