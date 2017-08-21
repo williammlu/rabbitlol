@@ -24,16 +24,6 @@ builtin_command_groups = [
             description='Google search',
             url_pattern='https://www.google.com/search?q={0}',
         ),
-        Command(
-            name='b',
-            description='Bing search',
-            url_pattern='https://www.bing.com/search?q={0}',
-        ),
-        Command(
-            name='d',
-            description='DuckDuckGo search',
-            url_pattern='https://www.duckduckgo.com/?q={0}',
-        ),
     ),
 
     CommandGroup(
@@ -42,17 +32,6 @@ builtin_command_groups = [
             name='gm',
             description='Google Maps search',
             url_pattern='https://www.google.com/maps/search/{0}',
-        ),
-        Command(
-            name='bm',
-            description='Bing Maps search',
-            url_pattern='https://www.bing.com/maps?where1={0}',
-        ),
-        Command(
-            name='osm',
-            description='OpenStreetMap search',
-            url_pattern='https://www.openstreetmap.org/search?query={0}',
-            default_url='https://www.openstreetmap.org',
         ),
     ),
 
@@ -63,47 +42,15 @@ builtin_command_groups = [
             description='Google Images search',
             url_pattern='https://www.google.com/search?tbm=isch&q={0}',
         ),
-        Command(
-            name='bi',
-            description='Bing Image search',
-            url_pattern='https://www.bing.com/images/search?q={0}',
-        ),
-        Command(
-            name='fl',
-            description='Flickr search',
-            url_pattern='https://www.flickr.com/search/?text={0}',
-            default_url='https://www.flickr.com',
-        ),
     ),
 
     CommandGroup(
-        'News & Knowledge',
+        'News',
         Command(
-            name='qu',
-            description='Search Quora on Google',
-            url_pattern=('https://www.google.com/search?q={0}%20'
-                         'site%3Aquora.com'),
-            default_url='https://www.quora.com',
-        ),
-        Command(
-            name='w',
-            description='Search Wikipedia on Google',
-            url_pattern=('https://www.wikipedia.org/w/index.php?'
-                         'search={0|percent_decode|percent_encode_plus}'),
-            default_url='https://www.wikipedia.org',
-        ),
-        Command(
-            name='hn',
-            description='Search Hacker News on Google',
-            url_pattern=('https://www.google.com/search?q={0}%20'
-                         'site%3Anews.ycombinator.com'),
-            default_url='https://news.ycombinator.com',
-        ),
-        Command(
-            name='gn',
-            description='Google News search',
-            url_pattern='https://www.google.com/search?q={0}&tbm=nws',
-            default_url='https://news.google.com',
+            name='nyt',
+            description='Go to New York Times',
+            url_pattern=('hhttps://query.nytimes.com/search/sitesearch/?action=click&contentCollection&region=TopBar&WT.nav=searchWidget&module=SearchSubmit&pgtype=Homepage#/asdf/7days://query.nytimes.com/search/sitesearch/?action=click&contentCollection&region=TopBar&WT.nav=searchWidget&module=SearchSubmit&pgtype=Homepage#/{0}/7days/'),
+            default_url='https://www.nytimes.com',
         ),
         Command(
             name='wa',
@@ -135,18 +82,6 @@ builtin_command_groups = [
             url_pattern='https://www.facebook.com/search/top/?q={0}',
             default_url='https://www.facebook.com',
         ),
-        Command(
-            name='gp',
-            description='Google+ search',
-            url_pattern='https://plus.google.com/s/{0}',
-            default_url='https://plus.google.com',
-        ),
-        Command(
-            name='t',
-            description='Twitter search',
-            url_pattern='https://www.twitter.com/search?q={0}',
-            default_url='https://www.twitter.com',
-        ),
     ),
 
     CommandGroup(
@@ -157,51 +92,21 @@ builtin_command_groups = [
             url_pattern='https://www.youtube.com/results?search_query={0}',
         ),
         Command(
-            name='gms',
-            description='Google Play Music search',
-            url_pattern='https://play.google.com/music/listen#/sr/{0}',
+            name='sp',
+            description='Spotify search',
+            url_pattern='hhttps://open.spotify.com/search/results://open.spotify.com/search/results/{0}',
+            default_url='https://www.open.spotify.com',
         ),
         Command(
-            name='pa',
-            description='Pandora search',
-            url_pattern='https://www.pandora.com/search/{0}',
-            default_url='https://www.pandora.com',
-        ),
-        Command(
-            name='sc',
-            description='SoundCloud search',
-            url_pattern='https://soundcloud.com/search?q={0}',
-            default_url='https://soundcloud.com',
-        ),
-        Command(
-            name='nf',
-            description='Netflix search',
-            url_pattern='https://www.netflix.com/search/{0}',
-            default_url='https://www.netflix.com',
-        ),
-        Command(
-            name='imdb',
-            description='IMDb search',
-            url_pattern='https://www.imdb.com/find?q={0}',
-            default_url='https://www.imdb.com',
-        ),
-        Command(
-            name='rt',
-            description='Rotten Tomatoes search',
-            url_pattern='https://www.rottentomatoes.com/search/?search={0}',
+            name='yelp',
+            description='Yelp search',
+            url_pattern='http://www.yelp.com/search?find_desc={0}&src=opensearch'
             default_url='https://www.rottentomatoes.com',
         ),
     ),
 
     CommandGroup(
         'Shopping',
-        Command(
-            name='bf',
-            description='BookFinder.com search',
-            url_pattern=('http://www.bookfinder.com/search/?new=&used=&ebooks=&classic=&'
-                         'lang=en&st=sh&ac=qr&submit=&keywords={0}'),
-            default_url='http://www.bookfinder.com',
-        ),
         Command(
             name='a',
             description='Amazon search.',
