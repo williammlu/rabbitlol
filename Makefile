@@ -1,7 +1,7 @@
 .PHONY: setup run test unit-coverage e2e-coverage coverage deploy clean python
 
 setup:
-	virtualenv-2.7 . && \
+	virtualenv . && \
 	source bin/activate && \
 	pip install \
 	coverage \
@@ -11,7 +11,7 @@ setup:
 	nosegae \
 	oauth2 \
 	pytest \
-	pyyaml
+	pyyaml && \
 	ls app/secrets.py || cp app/secrets.py_TEMPLATE app/secrets.py
 
 run: setup
