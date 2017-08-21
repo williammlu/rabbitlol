@@ -289,6 +289,11 @@ builtin_command_groups = [
             default_url='https://www.fedex.com',
         ),
         Command(
+            name='settings',
+            description='Open settings',
+            default_url='chrome://settings/',
+        ),
+        Command(
             name='ups',
             description='Track UPS package',
             url_pattern='https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={0}',
@@ -312,26 +317,9 @@ builtin_command_groups = [
             url_pattern='https://domains.google.com/registrar?s={0}',
         ),
         Command(
-            name='wu',
-            description='Search Wunderground',
-            url_pattern=('https://www.wunderground.com/cgi-bin/findweather'
-                         '/getForecast?query={0}'),
-            default_url='https://www.wunderground.com',
-        ),
-        Command(
             name='gt',
             description='Translate to English with Google Translate',
             url_pattern='https://translate.google.com/#auto/en/{0}',
-        ),
-        Command(
-            name='bt',
-            description='Translate to English with Bing Translator',
-            url_pattern='https://www.bing.com/translator?to=en&text={0}',
-        ),
-        Command(
-            name='mw',
-            description='Search Merriam-Webster online',
-            url_pattern='http://www.merriam-webster.com/dictionary/{0}',
         ),
     ),
 ]
