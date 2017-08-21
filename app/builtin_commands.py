@@ -289,11 +289,6 @@ builtin_command_groups = [
             default_url='https://www.fedex.com',
         ),
         Command(
-            name='settings',
-            description='Open settings',
-            default_url='chrome://settings/',
-        ),
-        Command(
             name='ups',
             description='Track UPS package',
             url_pattern='https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={0}',
