@@ -2,7 +2,6 @@
 
 setup:
 	virtualenv . && \
-	source bin/activate && \
 	pip install \
 	coverage \
 	flask \
@@ -12,6 +11,7 @@ setup:
 	oauth2 \
 	pytest \
 	pyyaml && \
+	source bin/activate && \
 	ls app/secrets.py || cp app/secrets.py_TEMPLATE app/secrets.py
 
 run: setup

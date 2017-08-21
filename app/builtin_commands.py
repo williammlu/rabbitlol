@@ -101,7 +101,7 @@ builtin_command_groups = [
             name='yelp',
             description='Yelp search',
             url_pattern='http://www.yelp.com/search?find_desc={0}&src=opensearch'
-            default_url='https://www.rottentomatoes.com',
+            default_url='https://www.yelp.com',
         ),
     ),
 
