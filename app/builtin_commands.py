@@ -148,6 +148,12 @@ builtin_command_groups = [
             default_url='https://stackoverflow.com',
         ),
         Command(
+            name='gh',
+            description='Search Github',
+            url_pattern=('https://github.com/search?q={0}&ref=opensearch'),
+            default_url='https://github.com/wml',
+        ),
+        Command(
             name='hs',
             description='Hoogle (Haskell) search',
             url_pattern='https://www.haskell.org/hoogle/?hoogle={0}',
