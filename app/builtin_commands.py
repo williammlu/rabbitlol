@@ -94,7 +94,7 @@ builtin_command_groups = [
         Command(
             name='sp',
             description='Spotify search',
-            url_pattern='hhttps://open.spotify.com/search/results://open.spotify.com/search/results/{0}',
+            url_pattern='https://open.spotify.com/search/results/{0}',
             default_url='https://www.open.spotify.com',
         ),
         Command(
