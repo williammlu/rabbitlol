@@ -162,7 +162,7 @@ builtin_command_groups = [
             name='gh',
             description='Search Github',
             url_pattern=('https://github.com/search?q={0}&ref=opensearch'),
-            default_url='https://github.com/wml',
+            default_url='https://github.com/williammlu',
         ),
         Command(
             name='hs',
