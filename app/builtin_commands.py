@@ -92,13 +92,19 @@ builtin_command_groups = [
             url_pattern='https://www.youtube.com/results?search_query={0}',
         ),
         Command(
+            name='ig',
+            description='Instagram search',
+            url_pattern='https://www.instagram.com/{0}',
+            default_url='https://www.instagram.com',
+        ),
+        Command(
             name='sp',
             description='Spotify search',
             url_pattern='https://open.spotify.com/search/results/{0}',
             default_url='https://www.open.spotify.com',
         ),
         Command(
-            name='yelp',
+            name='yp',
             description='Yelp search',
             url_pattern='http://www.yelp.com/search?find_desc={0}&src=opensearch',
             default_url='https://www.yelp.com',
@@ -111,6 +117,11 @@ builtin_command_groups = [
             name='a',
             description='Amazon search.',
             url_pattern='https://www.amazon.com/s?field-keywords={0}'
+        ),
+        Command(
+            name='eb',
+            description='Ebay search.',
+            url_pattern='http://rover.ebay.com/rover/1/711-47294-18009-3/4?mfe=search&mpre=http://www.ebay.com/sch/i.html?_nkw={0}'
         ),
     ),
 
