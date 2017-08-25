@@ -1,5 +1,6 @@
-Rabbitlol instance forked from esert/rabbitlol running on Google's App Engine with updated dependencies and 
-After spending a summer at Facebook using Bunnylol, I found my Chrome experience lacking.
+Smart bookmarking tool similar to bunnylol from Facebook. Rabbitlol instance forked from esert/rabbitlol running on Google's App Engine with updated dependencies.
+
+Use with ctrl-L on Chrome for an extra efficient browsing experience!
 
 ## Requirements
 
