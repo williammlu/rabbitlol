@@ -235,6 +235,13 @@ builtin_command_groups = [
                          'site%3Adocs.python.org'),
             default_url='https://docs.python.org',
         ),
+                Command(
+            name='np',
+            description='Search docs.scipy.org on Google',
+            url_pattern=('https://www.google.com/search?q={0}%20'
+                         'site%3Adocs.scipy.org'),
+            default_url='https://docs.scipy.org',
+        ),
         Command(
             name='js',
             description='Search developer.mozilla.org for Javascript on Google',
