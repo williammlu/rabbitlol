@@ -82,7 +82,6 @@ builtin_command_groups = [
             url_pattern='https://www.facebook.com/search/top/?q={0}',
             default_url='https://www.facebook.com',
         ),
-        'Inbox',
         Command(
             name='in',
             description='Google Inbox search',
