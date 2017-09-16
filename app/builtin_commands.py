@@ -132,6 +132,20 @@ builtin_command_groups = [
     ),
 
     CommandGroup(
+        'School',
+        Command(
+            name='woz',
+            description='See Woz Hall hours',
+            default_url='https://calendar.google.com/calendar/embed?src=berkeley.edu_7265736f757263652d393334@resource.calendar.google.com&ctz=America/Los_Angeles&mode=WEEK'
+        ),
+        Command(
+            name='pi',
+            description='Go to Piazza',
+            default='https://piazza.com'
+        ),
+    ),
+
+    CommandGroup(
         'Stocks & Markets',
         Command(
             name='gf',
