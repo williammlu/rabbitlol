@@ -2,6 +2,8 @@ Smart bookmarking tool similar to bunnylol from Facebook. Rabbitlol instance for
 
 Use with ctrl-L on Chrome for an extra efficient browsing experience!
 
+Try it by changing your default Chrome search to `https://vaulted-botany-110500.appspot.com/?q=%s&default=g`
+
 ## Requirements
 
 1. [Google App Engine SDK for Python](https://cloud.google.com/appengine/docs/python/download)
