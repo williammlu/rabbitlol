@@ -88,6 +88,18 @@ builtin_command_groups = [
             url_pattern='https://inbox.google.com/search/{0}',
             default_url='https://www.inbox.google.com',
         ),
+        Command(
+            name='inu',
+            description='Google Inbox search with user specification',
+            url_pattern='https://inbox.google.com/u/{1}/search/{2}',
+            default_url='https://www.inbox.google.com',
+        ),
+        Command(
+            name='mail',
+            description='Google Mail search with user specification',
+            url_pattern='https://mail.google.com/u/{1}/search/{2}',
+            default_url='https://www.mail.google.com',
+        ),
     ),
 
     CommandGroup(
